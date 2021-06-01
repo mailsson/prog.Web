@@ -7,5 +7,5 @@ router.get('/',function(req,res){
     res.sendfile(path.join(__dirname+"/index.html"));
 })
 app.use("/",router);
-app.listen(process.env.port || 3000);
-console.log("Serve rodando");
+app.listen(process.env.PORT || 5000); 
+console.log("Servidor rodando com Express");
